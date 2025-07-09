@@ -1,0 +1,116 @@
+
+body, main {
+display: flex;
+    flex-direction: column;
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 98vh;
+    
+}
+
+main {
+    font-family: "Abhaya Libre", serif;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+a{
+    color: black;
+}
+
+.division {
+    border: 1px solid black;
+}
+
+h2  {
+font-family: "Inter", serif;
+width: 97vw;
+}
+
+h2 span {
+    padding-left: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+tr {
+    text-align: center;
+}
+
+tr:not(td:last-of-type) {
+border-bottom: 1px solid black;
+}
+
+th, td:not(tr:last-of-type td:last-of-type){
+    border-right: 1px solid black;
+    
+}
+
+th, td {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.boxe {
+    background-color: #292929;
+    color: white;
+}
+
+.zumba{
+    background-color: #8E8E8E;
+}
+
+.yoga{
+    background-color: #C9B55B;
+}
+
+.pilates{
+    background-color: #E5DD8E;
+}
+
+.bodyworkout{
+    background-color: #DCD6C1;
+}
+
+.last-p{
+    margin-bottom: 3rem;
+}
+
+/* TABLETTE + DESKTOP */
+@media(min-width: 768px){
+
+    main{
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    th, td {
+    padding: 0.5rem 0.7rem;
+    font-size: 1.5rem;
+}
+
+}
+
+/* DESKTOP */
+@media(min-width: 992px){
+   main{
+        padding: 0;
+        font-size: 1.8rem;
+    }
+    
+       th, td {
+    padding: 0.7rem 0.9rem;
+    font-size: 1.7rem;
+}
+}
+

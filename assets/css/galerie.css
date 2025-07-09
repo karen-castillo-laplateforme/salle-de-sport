@@ -1,0 +1,121 @@
+/* Général */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+font-family: "Abhaya Libre", serif;
+}
+
+h2  {
+font-family: "Inter", serif;
+width: 100%;
+}
+
+h2 span {
+    padding-left: 1rem;
+}
+
+.division{
+    width: 99,99%;
+    border: 1px solid black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99,99%;
+}
+
+.images-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.images-container img {
+    width: 100%;
+}
+
+/* Section 2 */
+
+#section2 {
+    margin-bottom: 1rem;
+}
+
+.coach-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coach-description img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.coach-description p:first-of-type {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.coach-description p:last-of-type {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+/* TABLETTE */
+@media(min-width: 768px){
+      #section1 .images-container{
+        width: auto;
+        height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 1px solid red;
+}
+
+  #section2 .images-container{
+        width: auto;
+        height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 1px solid red;
+}
+
+.images-container img{
+   border: pink 1px solid;
+   width: 200px;
+   height: 150px;
+}
+
+}
+
+/* DESKTOP */
+@media(min-width: 992px){
+     .images-container{
+        width: auto;
+        height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.images-container img{
+   width: 200px;
+   height: 150px;
+}
+
+#section2 .images-container img{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+}

@@ -1,0 +1,206 @@
+/* Général */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+main *:not(h2) {
+font-family: "Abhaya Libre", serif;
+}
+
+/* Gestion des titres */
+
+h2, #activities-container div p, h2 span  {
+font-family: "Inter", serif;
+}
+
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 span{
+    padding-left: 1rem;
+}
+
+.division, #section2{
+    border-bottom: 1px solid black;
+}
+
+
+#section3 h2 {
+  position: absolute;
+  transform: translateY(-50%);
+  top:0;
+  left: 1rem;
+}
+
+
+/* Video */
+
+
+video{
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+
+/* Section 1 */
+#section1 {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#section1 p {
+    width: 68%;
+    text-align: justify;
+}
+
+#section1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.bold {
+    font-weight:700;
+}
+
+/* Section 2 */
+#section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#activities-container{
+    padding: 1rem;
+    width: auto;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 1.5rem;
+    
+}
+
+#activities-container div img{
+width: 100%;
+height: 100%;
+object-fit: cover; 
+}
+
+#activities-container div{
+    height: 100%;
+    position: relative;
+}
+
+#activities-container div p {
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Section 3 */
+#section3 {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: none;
+}
+
+#section3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/Background-image/salle\ de\ sport\ -\ noir\ et\ blanc.jpg);
+    background-position: center center;
+    background-size: cover;
+    opacity: 30%;
+    z-index: -1;
+
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 20px 20px;
+}
+
+table tr{
+    border-bottom: 1.5px solid black;
+}
+
+td, th {
+    line-height: 2rem;
+}
+
+th {
+    padding-right: 2rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+/* TABLETTE + DESKTOP */
+@media(min-width: 768px){
+
+    video {
+        object-fit: cover;
+        height: 40vh;
+    }
+
+    #section1{
+        height: 50vh;
+    }
+
+    #section1 p{
+        text-align: center;
+    }
+
+    #section2{
+        height: auto;
+    }
+
+    #activities-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+    }
+
+    #activities-container div img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+#activities-container div{
+    height: 70%;
+}
+
+#activities-container div p {
+    top: 1rem;
+    left: 4.5rem;
+    font-size: 1.8rem;
+}
+
+
+}
+
+/* DESKTOP */
+/* @media(min-width: 992px){} */

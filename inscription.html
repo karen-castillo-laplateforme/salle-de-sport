@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1"/>
+        <title>Inscription</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/header.css" />
+        <link rel="stylesheet" href="assets/css/footer.css" />
+        <link rel="stylesheet" href="assets/css/inscription.css" />
+    </head>
+    <body>
+        <header>
+            <div id="logo-Container">
+                <h1><span class="capital-letter">M</span>ove<span class="capital-letter">L</span>ab</h1>
+                <p id="slogan">Votre bien-être, notre priorité</p>
+            </div>
+            <div id="menu-container">
+                <input type="checkbox" id="menu-toogle" name="menu-toogle" />
+                <label for="menu-toogle">
+                    <img src="assets/images/Icônes/menu-burger-svgrepo-com.svg" alt="menu" id="menu-burger">
+                </label>
+              <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html">Accueil</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/galerie.html">Galerie</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/inscription.html">Inscription</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/planning.html">Planning</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </header>        
+        <main>
+            <section>
+              <h2><span>Formulaire</span><div class="division"></div><span>d'inscription</span> </h2>
+              
+                 <form>
+            <div id="profilePicture-container" class="flex-row">
+                <div id="profile-pic"> <span>Votre <br> photo <br> ici</span></div>
+                <div id="profilePicture-description">
+                    <h3>Bienvenue à <span class="capital-letter">M</span>ove<span class="capital-letter">L</span>ab</h3>
+                <p>Venez prendre soin de vous</p>
+                </div>
+            </div>
+            <label for="firstName"></label>
+            <input type="text" placeholder="Prénom" name="firstName" id="firstName" required>
+            <label for="lastName"></label>
+            <input type="text" placeholder="Nom" name="lastName" id="lastName" required>
+            
+            <label for="birthday"></label>
+            <input type="date" name="birthday" id="birthday" required>
+            <label for="email"></label>
+            <input type="text" placeholder="Email" name="body" id="email" required>
+            <label for="password"></label>
+            <input type="text" placeholder="Mot de passe" name="password" id="password" required>
+            <label for="passwordConfirm"></label>
+            <input type="text" placeholder="Confirmation mot de passe" name="passwordConfirm" id="passwordConfirm" required>
+        
+        <h4>Quel abonnement souhaitez-vous ?</h4>
+        <div class="cards flex-row">
+            <input type="radio" name="radio" id="radio-label-basic">
+            <label for="radio-label-basic">
+                <div class="label-content">
+                    <p>Basic</p>
+                    <p>29€/mois</p>
+                    <p><span>✓</span> Accès salle fitness/muscu</p>
+                </div>
+            </label>
+        </div>
+         <div class="cards flex-row">
+            <input type="radio" name="radio" id="radio-label-standard" checked>
+            <label for="radio-label-standard">
+                <div class="label-content">
+                    <p>Standard</p>
+                    <p>45€/mois</p>
+                    <p><span>✓</span> Accès salle + cours collectifs</p>
+                </div>
+            </label>
+        </div>
+         <div class="cards flex-row">
+            <input type="radio" name="radio" id="radio-label-premium">
+            <label for="radio-label-premium">
+                <div class="label-content">
+                    <p>Premium</p>
+                    <p>69€/mois</p>
+                    <p><span>✓</span> Accès illimité + Cours collectifs + Coaching personnel 1x/mois</p>
+                </div>
+            </label>
+        </div>
+        <button>S'inscrire</button>
+            </form>
+           </section>
+        </main>
+        <footer>
+            <h1><span class="capital-letter">M</span>ove<span class="capital-letter">L</span>ab</h1>
+            <div id="contact-container">
+                <div class="contact">
+                    <p>14 rue Tolbiac, 13007 <br>Marseille</p>
+                </div>
+                <div class="contact">
+                   <p> <a href="mailto:movelab@gym.fr">movelab@gym.fr</a> <br>
+                    04 46 65 45 65</p>
+                </div>
+                <div id="socialMedia-container">
+                    <img src="./assets/images/Icônes/instagram-svgrepo-com.png" alt="Icône instagram">
+                    <img src="./assets/images/Icônes/facebook-svgrepo-com (1).png" alt="Icône facebook">
+                    <img src="./assets/images/Icônes/youtube-svgrepo-com.png" alt="Icône youtube">
+                </div>
+            </div>
+       
+        </footer>
+    </body>
+</html>
